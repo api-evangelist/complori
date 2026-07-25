@@ -1,7 +1,28 @@
 aid: complori
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/complori.png
 name: Complori
-description: Complori is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Complori is a Berlin, Germany based online education company that teaches
+  children and young people to code through live, small-group video classes led
+  by qualified coaches in a protected digital space. Its programs span
+  programming with Minecraft, Python, JavaScript game development, app
+  development, and financial literacy, backed by a learning platform with
+  challenges and exercises, a mobile learning app, completion certificates,
+  flexible family-friendly scheduling, and holiday camps. Complori operates a
+  B2C consumer education service (with parents as the decision-makers) rather
+  than a developer-facing API product, and runs an education scholarship program
+  to broaden access across socioeconomic backgrounds. Backed by Speedinvest.
 url: https://raw.githubusercontent.com/api-evangelist/complori/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Education
+- EdTech
+- Online Learning
+- Coding
+- Programming
+- Kids
+- Germany
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/complori-domain-security.yml
 - type: Website
   url: https://complori.com
+- type: Pricing
+  url: https://complori.com/preise
+- type: SignUp
+  url: https://app.complori.com/probestunde
+- type: Support
+  url: https://faq.complori.com/knowledge
+- type: Blog
+  url: https://complori.com/magazin/
+- type: TermsOfService
+  url: https://app.complori.com/agb/
+- type: PrivacyPolicy
+  url: https://app.complori.com/datenschutz/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
